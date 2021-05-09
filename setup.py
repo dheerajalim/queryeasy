@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="queryeasy",
-    version="0.0.1",
+    version="0.0.3",
     author="Dheeraj Alimchandani",
     author_email="dheeraj.alim@gmail.com",
     description="Execute SQL queries on data present in CSV or Excel files. Also allows to generate the query"
@@ -28,8 +28,8 @@ setuptools.setup(
         "Topic :: Desktop Environment",
         "Environment :: Console",
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    # package_dir={"": "src"},
+    # packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
     install_requires=[
         "pandas ~= 1.2",
@@ -38,5 +38,6 @@ setuptools.setup(
         "openpyxl ~= 3.0",
         "sqlalchemy ~= 1.4",
     ],
+    py_modules=["queryeasy"],
     entry_points={"console_scripts": ["queryeasy = queryeasy:_run_query"]},
 )
