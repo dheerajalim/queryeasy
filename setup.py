@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="queryeasy",
-    version="0.0.3",
+    version="0.0.4",
     author="Dheeraj Alimchandani",
     author_email="dheeraj.alim@gmail.com",
     description="Execute SQL queries on data present in CSV or Excel files. Also allows to generate the query"

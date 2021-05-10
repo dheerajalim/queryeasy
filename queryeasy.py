@@ -16,7 +16,7 @@ from functools import reduce
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-VERSION = "queryeasy 0.0.1"
+VERSION = "queryeasy 0.0.4"
 __help_msg = """
 Copyright (c) 2021, Dheeraj Alimchandani, MIT License
 dheeraj.alim@gmail.com
